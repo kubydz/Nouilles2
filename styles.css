@@ -584,8 +584,40 @@ footer{
         overflow: hidden;
         transition: all 0.3s ease;
     }
-
-    .s2_grid >div:hover img {
+    /* ANIMATION */
+    .s2_grid > div:hover img {
+        transform: translateY(-10.5em);
+    }
+    
+    .s2_grid img {
+        transition: transform 2s;
+        margin-top: 50px;
+        width: 150px;
+        height: 70px;
+    }
+    
+    .pc,
+    .animation {
+        transition: transform 2s;
+    }
+    
+    .s2_grid > div:hover .pc,
+    .s2_grid > div:hover .animation {
+        transform: translateY(-10.5em);
+    }
+    
+    .animation {
+        margin-left: 10px;
+        margin-top: 50px;
+        width: 90%;
+        font-size: smaller;
+        text-align: center;
+        transform: translateY(20px);
+        display: flex;
+        align-items: center;
+    }
+    
+    /* .s2_grid >div:hover img {
         transform: translateY(-10.5em);
     }
     .s2_grid >div:hover.pc {
@@ -600,7 +632,8 @@ footer{
         width: 150px;
         height: 70px;
         transition: transform 2s;
-    }
+    } 
+    
     .pc,.animation {
         transition: transform 2s;
     }
@@ -611,7 +644,7 @@ footer{
         font-size: smaller;
         text-align: center ;
         transform: translateY(20px);
-        align-items: center;
+        align-items: center; */
     }
     /* Section3, Section4 */
     .s3_grid, .s4_grid {
@@ -648,4 +681,4 @@ footer{
     .nav_bottom2 {
         flex-direction: column;
         gap: 1em;
-    }
+    } 
